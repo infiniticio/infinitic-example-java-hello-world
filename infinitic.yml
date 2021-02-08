@@ -11,7 +11,7 @@ redis:
 pulsar:
   serviceUrl: pulsar://localhost:6650
   tenant: infinitic
-  namespace: dev2
+  namespace: dev
 
 taskEngine:
   consumers: 1
