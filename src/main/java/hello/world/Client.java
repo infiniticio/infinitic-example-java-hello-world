@@ -1,6 +1,5 @@
 package hello.world;
 
-import hello.world.tasks.HelloWorldService;
 import hello.world.workflows.HelloWorld;
 import io.infinitic.pulsar.InfiniticClient;
 
