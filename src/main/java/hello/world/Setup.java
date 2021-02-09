@@ -17,7 +17,7 @@ public class Setup {
                 "dev",
                 null
         );
-        infiniticAdmin.init();
+        infiniticAdmin.setupPulsar();
         infiniticAdmin.close();
     }
 }
