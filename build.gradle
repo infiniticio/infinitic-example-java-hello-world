@@ -11,13 +11,11 @@ dependencies {
     // add a logger
     implementation 'org.slf4j:slf4j-simple:2.0.3'
 
-    version = "0.13.1"
+    version = "0.16.2"
     // infinitic client
     implementation 'io.infinitic:infinitic-client:' + version
     // infinitic worker
     implementation 'io.infinitic:infinitic-worker:' + version
-    // infinitic dashboard
-    implementation 'io.infinitic:infinitic-dashboard:' + version
 }
 
 application {
@@ -29,11 +27,4 @@ tasks.register('dispatch', JavaExec) {
     group = "infinitic"
     mainClass = "hello.world.Client"
     classpath = sourceSets.main.runtimeClasspath
-}
-
-tasks.register('dashboard', JavaExec) {
-    group = "infinitic"
-    mainClass = "hello.world.Dashboard"
-    classpath = sourceSets.main.runtimeClasspath
-    args("infinitic.yml")
 }
